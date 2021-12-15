@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cultivator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <de>BlueBird 6000</de>
+            <en>BlueBird 6000</en></name>
+        <specs>
+            <neededPower>170</neededPower>
+            <workingWidth>6.0</workingWidth>
+        </specs>
+        <functions>
+            <function>$l10n_function_cultivator</function>
+        </functions>
+        <image>store_bluebird.png</image>
+        <price>35000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>RABE</brand>
+        <category>cultivators</category>
+        <vertexBufferMemoryUsage>4452744</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>673668</indexBufferMemoryUsage>
+        <textureMemoryUsage>17476632</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_cultivator</typeDesc>
+        <filename>i3d/RabeBlueBird.i3d</filename>
+        <size width="6.5" length="3.5"/>
+        <components>
+            <component centerOfMass="0 0.5 1" solverIterationCount="10" mass="2000"/>
+        </components>
+        <schemaOverlay name="IMPLEMENT" attacherJointPosition="0 0"/>
+        <speedLimit value="15"/>
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_RulloNo" price="0">
+                <wheels hasSurfaceSounds="false">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/10_80R12.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.8" repr="rotWheelSLeft" driveNode="wheelFrontLeft" forcePointRatio="0.3" radius="0.3" brakeFactor="0.05" initialCompression="35" suspTravel="0.025" spring="10" damper="20" rotationDamping="0.0002" versatileYRot="true" frictionScale="0.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/10_80R12.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.8" repr="rotWheelSRight" driveNode="wheelFrontRight" forcePointRatio="0.3" radius="0.3" brakeFactor="0.05" initialCompression="35" suspTravel="0.025" spring="10" damper="20" rotationDamping="0.0002" versatileYRot="true" frictionScale="0.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/300_80R15_3.xml" isLeft="true">
+                        <physics restLoad="1.5" repr="wheelConfigLeft" radius="0.3" initialCompression="50" suspTravel="0.05" spring="18" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/300_80R15_3.xml" isLeft="false">
+                        <physics restLoad="1.5" repr="wheelConfigRight" radius="0.3" initialCompression="50" suspTravel="0.05" spring="18" damper="20"/>
+                    </wheel>
+                    <wheel hasTireTracks="false" hasParticles="false">
+                        <physics restLoad="2.3" repr="wheelRollerLeft" forcePointRatio="0.02" radius="0.3" width="0.2" initialCompression="20" suspTravel="0.01" spring="0.05" damper="10"/>
+                    </wheel>
+                    <wheel hasTireTracks="false" hasParticles="false">
+                        <physics restLoad="2.3" repr="wheelRollerRight" forcePointRatio="0.02" radius="0.3" width="0.2" initialCompression="20" suspTravel="0.01" spring="0.05" damper="10"/>
+                    </wheel>
+                    <wheel hasTireTracks="false" hasParticles="false">
+                        <physics restLoad="2.3" repr="wheelRollerMid" forcePointRatio="0.02" radius="0.3" width="0.2" initialCompression="20" suspTravel="0.01" spring="0.05" damper="10"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="wheelRollerLeft" translationActive="-0.042 -0.09 0.258" scaleActive="0 0 0"/>
+                <objectChange node="wheelRollerRight" translationActive="0.042 -0.09 0.258" scaleActive="0 0 0"/>
+                <objectChange node="wheelRollerMid" translationActive="0 -0.09 0.258" scaleActive="0 0 0"/>
+                <objectChange node="SupportRollerMid" visibilityActive="false"/>
+                <objectChange node="SupportRollerLeft" visibilityActive="false"/>
+                <objectChange node="SupportRollerRight" visibilityActive="false"/>
+                <objectChange node="colSupportL" translationActive="-2.283 -0.929 0.343" scaleActive="1 1 1"/>
+                <objectChange node="colSupportR" translationActive="2.283 -0.929 0.343" scaleActive="1 1 1"/>
+                <objectChange node="colSupportM" translationActive="0 -0.929 0.305" scaleActive="1 1 1"/>
+                <objectChange node="foliage_bendingL" translationActive="2.48 0 1.236"/>
+                <objectChange node="foliage_bendingR" translationActive="-2.48 0 1.236"/>
+                <objectChange node="foliage_bendingM" translationActive="0 0 1.236"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_RulloSi" price="12500">
+                <wheels hasSurfaceSounds="false">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/10_80R12.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.8" repr="rotWheelSLeft" driveNode="wheelFrontLeft" forcePointRatio="0.3" radius="0.3" initialCompression="35" suspTravel="0.025" spring="10" damper="20" rotationDamping="0.0002" versatileYRot="true" frictionScale="0.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/10_80R12.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.8" repr="rotWheelSRight" driveNode="wheelFrontRight" forcePointRatio="0.3" radius="0.3" initialCompression="35" suspTravel="0.025" spring="10" damper="20" rotationDamping="0.0002" versatileYRot="true" frictionScale="0.5"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/300_80R15_3.xml" isLeft="true">
+                        <physics restLoad="1.5" repr="wheelConfigLeft" radius="0.3" initialCompression="50" suspTravel="0.2" spring="20" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/300_80R15_3.xml" isLeft="false">
+                        <physics restLoad="1.5" repr="wheelConfigRight" radius="0.3" initialCompression="50" suspTravel="0.2" spring="20" damper="20"/>
+                    </wheel>
+                    <wheel hasTireTracks="false" hasParticles="false">
+                        <physics restLoad="2.3" repr="wheelRollerLeft" forcePointRatio="0.02" radius="0.3" width="0.2" initialCompression="20" suspTravel="0.01" spring="0.05" damper="10"/>
+                    </wheel>
+                    <wheel hasTireTracks="false" hasParticles="false">
+                        <physics restLoad="2.3" repr="wheelRollerRight" forcePointRatio="0.02" radius="0.3" width="0.2" initialCompression="20" suspTravel="0.01" spring="0.05" damper="10"/>
+                    </wheel>
+                    <wheel hasTireTracks="false" hasParticles="false">
+                        <physics restLoad="2.3" repr="wheelRollerMid" forcePointRatio="0.02" radius="0.3" width="0.2" initialCompression="20" suspTravel="0.01" spring="0.05" damper="10"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="wheelRollerLeft" scaleActive="1 1 1"/>
+                <objectChange node="wheelRollerRight" scaleActive="1 1 1"/>
+                <objectChange node="wheelRollerMid" scaleActive="1 1 1"/>
+                <objectChange node="SupportRollerMid" visibilityActive="true"/>
+                <objectChange node="SupportRollerLeft" visibilityActive="true"/>
+                <objectChange node="SupportRollerRight" visibilityActive="true"/>
+                <objectChange node="colSupportL" scaleActive="1 1 1"/>
+                <objectChange node="colSupportR" scaleActive="1 1 1"/>
+                <objectChange node="colSupportM" scaleActive="1 1 1"/>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <color0 useRimColor="true"/>
+            <hub linkNode="wheelFrontLeft" filename="$data/shared/wheels/hubs/hub_n5_1.xml" isLeft="true" scale="0.15 0.15 0.15"/>
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hub_n5_1.xml" isLeft="false" scale="0.15 0.15 0.15"/>
+            <hub linkNode="wheelConfigLeft" filename="$data/shared/wheels/hubs/hub_n5_1.xml" isLeft="true" scale="0.253 0.253 0.253"/>
+            <hub linkNode="wheelConfigRight" filename="$data/shared/wheels/hubs/hub_n5_1.xml" isLeft="false" scale="0.253 0.253 0.253"/>
+        </hubs>
+    </wheels>
+    <speedRotatingParts>
+        <speedRotatingPart node="rimWheelLeft" radius="0.5" wheelIndex="1"/>
+        <speedRotatingPart node="rimWheelRight" radius="0.5" wheelIndex="2"/>
+        <speedRotatingPart node="RollerLeft" radius="0.5" wheelIndex="5"/>
+        <speedRotatingPart node="RollerRight" radius="0.5" wheelIndex="6"/>
+        <speedRotatingPart node="RollerMid" radius="0.5" wheelIndex="7"/>
+    </speedRotatingParts>
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="1|0" linkNode="connector01" filename="$data/shared/connectionHoses/connectors.i3d"/>
+        <dynamicallyLoadedPart node="1|0" linkNode="connector02" filename="$data/shared/connectionHoses/connectors.i3d"/>
+    </dynamicallyLoadedParts>
+    <attachable>
+        <inputAttacherJointConfigurations>
+            <inputAttacherJointConfiguration name="$l10n_configuration_BACK" price="0">
+                <inputAttacherJoint jointType="implement" lowerRotationOffset="-10" node="attacherJoint" topReferenceNode="topReferenceNode" upperRotationOffset="15" upperRotLimitScale="0 0 0">
+                    <distanceToGround lower="0.3" upper="1.6"/>
+                </inputAttacherJoint>
+                <objectChange node="frontAttachBB" visibilityActive="false"/>
+                <objectChange node="wheelSupportLeft" visibilityActive="false"/>
+                <objectChange node="wheelSupportRight" visibilityActive="false"/>
+                <objectChange node="wheelSupportHitchLeft" visibilityActive="false"/>
+                <objectChange node="wheelSupportHitchRight" visibilityActive="false"/>
+                <objectChange node="supportWheelSX" visibilityActive="true"/>
+                <objectChange node="supportWheelDX" visibilityActive="true"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration name="$l10n_configuration_FRONT" price="2500">
+                <inputAttacherJoint jointType="implement" lowerRotationOffset="-10" node="attacherJoint1" topReferenceNode="topReferenceNode1" upperRotationOffset="5" upperRotLimitScale="0 0 0">
+                    <distanceToGround lower="0.2" upper="1.8"/>
+                </inputAttacherJoint>
+                <objectChange node="frontAttachBB" visibilityActive="true"/>
+                <objectChange node="wheelSupportLeft" visibilityActive="true"/>
+                <objectChange node="wheelSupportRight" visibilityActive="true"/>
+                <objectChange node="wheelSupportHitchLeft" visibilityActive="true"/>
+                <objectChange node="wheelSupportHitchRight" visibilityActive="true"/>
+                <objectChange node="supportWheelSX" visibilityActive="false"/>
+                <objectChange node="supportWheelDX" visibilityActive="false"/>
+            </inputAttacherJointConfiguration>
+        </inputAttacherJointConfigurations>
+        <lowerAnimation name="lowerAnimation" speed="2"/>
+        <support animationName="moveSupport"/>
+    </attachable>
+    <connectionHoses>
+        <hose diameter="0.02" inputAttacherJointIndices="1" isTwoPointHose="true" isWorldSpaceHose="false" length="1.93" node="hydraulicIn01" straighteningFactor="1.9" type="hydraulicIn"/>
+        <hose diameter="0.02" inputAttacherJointIndices="1" isTwoPointHose="true" isWorldSpaceHose="true" length="1.93" node="hydraulicOut02" straighteningFactor="1.9" type="hydraulicOut">
+            <objectChange node="hoses03" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="hoses04" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="Fasciette" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="connector01" visibilityActive="false" visibilityInactive="true"/>
+            <objectChange node="connector02" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+    <powerConsumer forceNode="rabe_main_component1" maxForce="38" neededMaxPtoPower="50"/>
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundReferenceNode" threshold="0.18" depthNode="groundReferenceNode" chargeValue="1"/>
+    </groundReferenceNodes>
+    <workAreas>
+        <workArea functionName="processCultivatorArea" type="cultivator">
+            <area heightNode="workAreaHeight" startNode="workAreaStart" widthNode="workAreaWidth"/>
+            <folding maxLimit="1.0" minLimit="0"/>
+            <groundReferenceNode index="1"/>
+        </workArea>
+        <workArea functionName="processCultivatorArea" type="cultivator">
+            <area heightNode="workAreaHeightLeft" startNode="workAreaStartLeft" widthNode="workAreaWidthLeft"/>
+            <folding maxLimit="1.0" minLimit="0"/>
+            <groundReferenceNode index="1"/>
+        </workArea>
+        <workArea functionName="processCultivatorArea" type="cultivator">
+            <area heightNode="workAreaHeightRight" startNode="workAreaStartRight" widthNode="workAreaWidthRight"/>
+            <folding maxLimit="1.0" minLimit="0"/>
+            <groundReferenceNode index="1"/>
+        </workArea>
+    </workAreas>
+    <workParticles>
+        <particleAnimation>
+            <node node="soilAnimation" refNodeIndex="1" materialType="SOIL"/>
+            <node node="soilAnimationLeft" refNodeIndex="1" materialType="SOIL"/>
+            <node node="soilAnimationRight" refNodeIndex="1" materialType="SOIL"/>
+        </particleAnimation>
+        <particle>
+            <node node="soilEmitShapeArm" refNodeIndex="1" particleType="SOIL" worldSpace="false" speedThreshold="6"/>
+            <node node="soilEmitShapeLeftArm" refNodeIndex="1" particleType="SOIL" worldSpace="false" speedThreshold="6"/>
+            <node node="soilEmitShapeRightArm" refNodeIndex="1" particleType="SOIL" worldSpace="false" speedThreshold="6"/>
+            <node node="dustEmitterShapeLeft" refNodeIndex="1" particleType="SOIL_SMOKE" speedThreshold="1"/>
+            <node node="dustEmitterShapeRight" refNodeIndex="1" particleType="SOIL_SMOKE" speedThreshold="1"/>
+            <node node="dustEmitterShapeMid" refNodeIndex="1" particleType="SOIL_SMOKE" speedThreshold="1"/>
+        </particle>
+    </workParticles>
+    <animations>
+        <animation name="moveSupport">
+            <part endTime="0.50" endTrans="0 0 0.657" node="supportCol" startTime="0.0" startTrans="0 0.6 0.657"/>
+        </animation>
+        <animation name="manovella">
+            <part endRot="0 500 0" endTime="3" node="rotWheelDX" startRot="0 0 0" startTime="0"/>
+            <part endRot="0 500 0" endTime="3" node="rotWheelSX" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="folding">
+            <part endRot="0 0 180" endTime="15" node="rabeBB_Left" startRot="0 0 0" startTime="4"/>
+            <part endRot="0 0 -180" endTime="12" node="rabeBB_Right" startRot="0 0 0" startTime="0"/>
+            <part endRot="-6 0 0" endTime="6" node="wheelSupportLeft" startRot="10 0 0" startTime="4"/>
+            <part endRot="-6 0 0" endTime="6" node="wheelSupportRight" startRot="10 0 0" startTime="0"/>
+            <part endTime="1.0" endTrans="0 0.583 0" node="groundReferenceNode" startTime="0.0" startTrans="0 0 0"/>
+            <part endTime="0.05" node="supportWheelSX" startTime="0.00" visibility="true"/>
+            <part endTime="0.10" node="supportWheelSX" startTime="0.05" visibility="false"/>
+            <part endTime="0.05" node="supportWheelDX" startTime="0.00" visibility="true"/>
+            <part endTime="0.10" node="supportWheelDX" startTime="0.05" visibility="false"/>
+			
+			<sound template="defaultHydraulicSound" startTime="1.4"  endTime="7.99" volumeScale="1.1" pitchScale="1"/>
+            <sound template="defaultHydraulicSound" startTime="1.01" endTime="7.6"  volumeScale="1.1" pitchScale="0.8"/>
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="0.99" volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="clackVar2Small"        startTime="7.99"                volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar2"             startTime="7.99"                volumeScale="1"   pitchScale="1"/>
+            <sound template="foldStartMed02"        startTime="7.99"                volumeScale="2"   pitchScale="0.8" />
+            <sound template="clackVar4"             startTime="7.99" direction="1"  volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar3"             startTime="7.5"                 volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar2"             startTime="7.5"                 volumeScale="1"   pitchScale="1"/>
+            <sound template="sheetImp02"            startTime="7.5"                 volumeScale="2.4" pitchScale="0.7"/>
+            <sound template="clackVar2"             startTime="7.5"  direction="-1" volumeScale="1"   pitchScale="1"/>
+            <sound template="sheetImp05"            startTime="7.5"  direction="-1" volumeScale="1.4" pitchScale="0.8"/>
+            <sound template="clackVar2Small"        startTime="1.01" direction="1"  volumeScale="1"   pitchScale="1" />
+            <sound template="clackVar4"             startTime="1.01" direction="1"  volumeScale="1.9" pitchScale="0.7"/>
+            <sound template="clackVar2"             startTime="1.5"                 volumeScale="1"   pitchScale="1"/>
+            <sound template="foldStartMed02"        startTime="1.5"                 volumeScale="2.2" pitchScale="0.6"/>
+            <sound template="clackVar4"             startTime="1.5"  direction="-1" volumeScale="1.7" pitchScale="0.7"/>
+            <sound template="foldStartMed02"        startTime="1.5"  direction="-1" volumeScale="2.2" pitchScale="0.7"/>
+            <sound template="sheetImp02"            startTime="1.01" direction="-1" volumeScale="2.3" pitchScale="0.7"/>
+            <sound template="clackVar2"             startTime="1.01" direction="-1" volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar3"             startTime="0.99" direction="-1" volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar4"             startTime="0.99" direction="-1" volumeScale="1.5" pitchScale="0.8"/>
+            <sound template="sheetImp02"            startTime="0.99" direction="1"  volumeScale="2.1" pitchScale="0.8"/>
+            <sound template="clackVar5"             startTime="0.99" direction="1"  volumeScale="1.1" pitchScale="0.6"/>
+            <sound template="foldStartMed02"        startTime="0.01" direction="1"  volumeScale="1.5" pitchScale="1"/>
+            <sound template="clackVar4"             startTime="0.01" direction="1"  volumeScale="1.8" pitchScale="0.7"/>
+            <sound template="clackVar6"             startTime="0.01" direction="-1" volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="clackVar2"             startTime="0.2"  direction="-1" volumeScale="1.4" pitchScale="1"/>
+            <sound template="clackVar4"             startTime="0.2"  direction="-1" volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="sheetImp02"            startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="1.6"/>
+            <sound template="sheetImp02"            startTime="0.1"  direction="-1" volumeScale="2.5" pitchScale="0.8"/>
+            <sound template="clickLong"             startTime="2.0"  direction="1"  volumeScale="1.3" pitchScale="0.8"/>
+        </animation>
+		
+        <animation name="lowerAnimation">
+            <part endRot="-4.5 0 0" endTime="1" node="wheelSupportLeft" startRot="10 0 0" startTime="0"/>
+            <part endRot="-4.5 0 0" endTime="1" node="wheelSupportRight" startRot="10 0 0" startTime="0"/>
+            <part endRot="3 0 0" endTime="3" node="SupportRollerLeft" startRot="0 0 0" startTime="1"/>
+            <part endRot="3 0 0" endTime="3" node="SupportRollerRight" startRot="0 0 0" startTime="1"/>
+            <part endRot="3 0 0" endTime="3" node="SupportRollerMid" startRot="0 0 0" startTime="1"/>
+        </animation>   
+    </animations>
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="0" turnOnFoldDirection="-1">
+                    <foldingPart animationName="folding" speedScale="1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+    <cylindered>
+        <movingParts>
+            <movingPart node="pistoneLeft" referenceFrame="refPistoneLeft" referencePoint="refPistoneLeft">
+                <translatingPart node="steloLeft"/>
+            </movingPart>
+            <movingPart node="pistoneRight" referenceFrame="refPistoneRight" referencePoint="refPistoneRight">
+                <translatingPart node="steloRight"/>
+            </movingPart>
+            <movingPart node="rabeBB_LeftFrame" referenceFrame="refRabeLeft" referencePoint="refRabeLeft"/>
+            <movingPart node="rabeBB_RightFrame" referenceFrame="refRabeRight" referencePoint="refRabeRight"/>
+            <movingPart node="wheelSupportHitchLeft" referenceFrame="wheelSupportHitchLeftFrame" referencePoint="wheelSupportHitchLeftFrame"/>
+            <movingPart node="wheelSupportHitchRight" referenceFrame="wheelSupportHitchRightFrame" referencePoint="wheelSupportHitchRightFrame"/>
+            <movingPart node="supportSpring01" referenceFrame="supportSpringRef01" referencePoint="supportSpringRef01"/>
+            <movingPart node="supportSpring02" referenceFrame="supportSpringRef02" referencePoint="supportSpringRef02"/>
+            <movingPart node="supportSpring03" referenceFrame="supportSpringRef03" referencePoint="supportSpringRef03"/>
+            <movingPart node="supportSpring04" referenceFrame="supportSpringRef04" referencePoint="supportSpringRef04"/>
+            <movingPart node="supportSpring05" referenceFrame="supportSpringRef05" referencePoint="supportSpringRef05"/>
+            <movingPart node="supportSpring06" referenceFrame="supportSpringRef06" referencePoint="supportSpringRef06"/>
+            <movingPart node="supportSpring07" referenceFrame="supportSpringRef07" referencePoint="supportSpringRef07"/>
+            <movingPart node="supportSpring08" referenceFrame="supportSpringRef08" referencePoint="supportSpringRef08"/>
+            <movingPart node="supportSpring09" referenceFrame="supportSpringRef09" referencePoint="supportSpringRef09"/>
+            <movingPart node="supportSpring10" referenceFrame="supportSpringRef10" referencePoint="supportSpringRef10"/>
+            <movingPart node="supportSpring11" referenceFrame="supportSpringRef11" referencePoint="supportSpringRef11"/>
+            <movingPart node="supportSpring12" referenceFrame="supportSpringRef12" referencePoint="supportSpringRef12"/>
+            <movingPart node="supportSpring13" referenceFrame="supportSpringRef13" referencePoint="supportSpringRef13"/>
+            <movingPart node="frame01" referenceFrame="frame01Ref" referencePoint="frame01Ref"/>
+            <movingPart node="frame02" referenceFrame="frame02Ref" referencePoint="frame02Ref"/>
+            <movingPart node="frame03" referenceFrame="frame03Ref" referencePoint="frame03Ref"/>
+            <movingPart node="frame04" referenceFrame="frame04Ref" referencePoint="frame04Ref"/>
+            <movingPart node="frame05" referenceFrame="frame05Ref" referencePoint="frame05Ref"/>
+            <movingPart node="frame06" referenceFrame="frame06Ref" referencePoint="frame06Ref"/>
+            <movingPart node="frame07" referenceFrame="frame07Ref" referencePoint="frame07Ref"/>
+            <movingPart node="frame08" referenceFrame="frame08Ref" referencePoint="frame08Ref"/>
+            <movingPart node="frame09" referenceFrame="frame09Ref" referencePoint="frame09Ref"/>
+            <movingPart node="frame10" referenceFrame="frame10Ref" referencePoint="frame10Ref"/>
+            <movingPart node="frame11" referenceFrame="frame11Ref" referencePoint="frame11Ref"/>
+            <movingPart node="frame12" referenceFrame="frame12Ref" referencePoint="frame12Ref"/>
+            <movingPart node="frame13" referenceFrame="frame13Ref" referencePoint="frame13Ref"/>
+        </movingParts>
+        <movingTools>
+            <movingTool node="rabeBB_Left" playSound="true" wheelIndices="1 3 5">
+                <dependentPart node="rabeBB_LeftFrame"/>
+            </movingTool>
+            <movingTool node="rabeBB_Right" playSound="true" wheelIndices="2 4 6">
+                <dependentPart node="rabeBB_RightFrame"/>
+            </movingTool>
+            <movingTool node="rabeBB_LeftFrame" playSound="true">
+                <dependentPart node="pistoneLeft"/>
+            </movingTool>
+            <movingTool node="rabeBB_RightFrame" playSound="true">
+                <dependentPart node="pistoneRight"/>
+            </movingTool>
+            <movingTool node="wheelSupportLeft" playSound="true" wheelIndices="1">
+                <dependentPart node="wheelSupportHitchLeft"/>
+            </movingTool>
+            <movingTool node="wheelSupportRight" playSound="true" wheelIndices="2">
+                <dependentPart node="wheelSupportHitchRight"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird01" playSound="false">
+                <dependentPart node="supportSpring01"/>
+                <dependentPart node="frame01"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird02" playSound="false">
+                <dependentPart node="supportSpring02"/>
+                <dependentPart node="frame02"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird03" playSound="false">
+                <dependentPart node="supportSpring03"/>
+                <dependentPart node="frame03"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird04" playSound="false">
+                <dependentPart node="supportSpring04"/>
+                <dependentPart node="frame04"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird05" playSound="false">
+                <dependentPart node="supportSpring05"/>
+                <dependentPart node="frame05"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird06" playSound="false">
+                <dependentPart node="supportSpring06"/>
+                <dependentPart node="frame06"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird07" playSound="false">
+                <dependentPart node="supportSpring07"/>
+                <dependentPart node="frame07"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird08" playSound="false">
+                <dependentPart node="supportSpring08"/>
+                <dependentPart node="frame08"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird09" playSound="false">
+                <dependentPart node="supportSpring09"/>
+                <dependentPart node="frame09"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird10" playSound="false">
+                <dependentPart node="supportSpring10"/>
+                <dependentPart node="frame10"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird11" playSound="false">
+                <dependentPart node="supportSpring11"/>
+                <dependentPart node="frame11"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird12" playSound="false">
+                <dependentPart node="supportSpring12"/>
+                <dependentPart node="frame12"/>
+            </movingTool>
+            <movingTool node="RabeBlueBird13" playSound="false">
+                <dependentPart node="supportSpring13"/>
+                <dependentPart node="frame13"/>
+            </movingTool>
+            <movingTool node="regolazioneAltezzaRuotaSX" playSound="true" wheelIndices="3">
+                <dependentMovingTool node="regolazioneAltezzaRuotaDX" speedScale="1"/>
+                <controls axis="AXIS_FRONTLOADER_TOOL" invertAxis="true" mouseSpeedFactor="0.4"/>
+            </movingTool>
+            <movingTool node="regolazioneAltezzaRuotaDX" playSound="true" wheelIndices="4"/>
+        </movingTools>
+    </cylindered>
+    <randomlyMovingParts>
+        <randomlyMovingPart node="RabeBlueBird01" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird02" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird03" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird04" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird05" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird06" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird07" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird08" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird09" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird10" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird11" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird12" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+        <randomlyMovingPart node="RabeBlueBird13" refNodeIndex="1" rotMean="183 180" rotAxis="1" rotVariance="4 -2" rotTimeMean="0.1246 0.0623" rotTimeVariance="0.03 0.03" pauseMean="0.01 0.2492" pauseVariance="0.005 0.2" isSpeedDependent="true"/>
+    </randomlyMovingParts>
+    <cultivator>
+        <directionNode node="rabe_main_component1"/>
+        <onlyActiveWhenLowered value="true"/>
+        <sounds>
+            <work linkNode="rabe_main_component1" template="DEFAULT_CULTIVATOR_WORK"/>
+        </sounds>
+    </cultivator>
+    <foliageBending>
+        <bendingNode minX="0" maxX="1.2" minZ="-1.08" maxZ="0" yOffset="0.2" node="foliage_bendingM"/>
+        <bendingNode minX="0" maxX="1.2" minZ="-1.08" maxZ="0" yOffset="0.2" node="foliage_bendingL"/>
+        <bendingNode minX="0" maxX="1.2" minZ="-1.08" maxZ="0" yOffset="0.2" node="foliage_bendingR"/>
+    </foliageBending>
+    <baseMaterial>
+        <material name="rabeCultivator_mat" baseNode="RabeBlueBird01">
+            <shaderParameter name="colorMat1" value="0.05 0.05 0.05 0"/>
+        </material>
+    </baseMaterial>
+    <baseMaterialConfigurations defaultColorIndex="1" useDefaultColors="false">
+        <baseMaterialConfiguration color="0.05 0.05 0.05 0" name="BLACK" price="0">
+            <material name="rabeCultivator_mat" shaderParameter="colorMat1"/>
+        </baseMaterialConfiguration>
+        <baseMaterialConfiguration color="0.084 0.238 0.617 0" name="RABE" price="500"/>
+    </baseMaterialConfigurations>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <needsLowering value="true"/>
+    </ai>
+    <i3dMappings>
+        <i3dMapping id="rabe_main_component1" node="0>"/>
+        <i3dMapping id="RabeBlueBird_vis" node="0>0"/>
+        <i3dMapping id="attachable" node="0>0|0"/>
+        <i3dMapping id="attacherJoint" node="0>0|0|0"/>
+        <i3dMapping id="topReferenceNode" node="0>0|0|1"/>
+        <i3dMapping id="attacherJoint1" node="0>0|0|2"/>
+        <i3dMapping id="topReferenceNode1" node="0>0|0|3"/>
+        <i3dMapping id="support" node="0>0|0|4"/>
+        <i3dMapping id="supportCol" node="0>0|0|4|0"/>
+        <i3dMapping id="rabeBB_Left" node="0>0|1"/>
+        <i3dMapping id="movingPartsLeft" node="0>0|1|0"/>
+        <i3dMapping id="wheelSupportLeft" node="0>0|1|0|0"/>
+        <i3dMapping id="rotWheelSLeft" node="0>0|1|0|0|0"/>
+        <i3dMapping id="rotWheelSupportLeft" node="0>0|1|0|0|0|0"/>
+        <i3dMapping id="rimWheelLeft" node="0>0|1|0|0|0|0|0"/>
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|0|0|0|0|0|0"/>
+        <i3dMapping id="wheelSupportHitchLeftFrame" node="0>0|1|0|0|1"/>
+        <i3dMapping id="werk_sx" node="0>0|1|0|0|2"/>
+        <i3dMapping id="wheelSupportHitchLeft" node="0>0|1|0|1"/>
+        <i3dMapping id="supportWheelSX" node="0>0|1|0|2"/>
+        <i3dMapping id="regolazioneAltezzaRuotaSX" node="0>0|1|0|2|0"/>
+        <i3dMapping id="rotWheelSX" node="0>0|1|0|2|0|0"/>
+        <i3dMapping id="attachWheelSX" node="0>0|1|0|2|0|1"/>
+        <i3dMapping id="wheelConfigLeft" node="0>0|1|0|2|0|1|0"/>
+        <i3dMapping id="bultsWheelConfigSX2" node="0>0|1|0|2|0|2"/>
+        <i3dMapping id="bultsWheelConfigSX" node="0>0|1|0|2|1"/>
+        <i3dMapping id="dentiBlueBird_0" node="0>0|1|1"/>
+        <i3dMapping id="attachFrame06" node="0>0|1|1|0"/>
+        <i3dMapping id="RabeBlueBird06" node="0>0|1|1|0|0"/>
+        <i3dMapping id="bultsBB06" node="0>0|1|1|0|0|0"/>
+        <i3dMapping id="joint16" node="0>0|1|1|0|0|1"/>
+        <i3dMapping id="supportSpringRef06" node="0>0|1|1|0|0|2"/>
+        <i3dMapping id="frame06Ref" node="0>0|1|1|0|0|3"/>
+        <i3dMapping id="frame06" node="0>0|1|1|0|1"/>
+        <i3dMapping id="supportSpring06" node="0>0|1|1|0|2"/>
+        <i3dMapping id="bultsBBF06D" node="0>0|1|1|0|2|0"/>
+        <i3dMapping id="molla8" node="0>0|1|1|0|2|1"/>
+        <i3dMapping id="joint15" node="0>0|1|1|0|2|1|0"/>
+        <i3dMapping id="bultsBBF06" node="0>0|1|1|0|3"/>
+        <i3dMapping id="attachFrame07" node="0>0|1|1|1"/>
+        <i3dMapping id="RabeBlueBird07" node="0>0|1|1|1|0"/>
+        <i3dMapping id="bultsBB07" node="0>0|1|1|1|0|0"/>
+        <i3dMapping id="joint14" node="0>0|1|1|1|0|1"/>
+        <i3dMapping id="supportSpringRef07" node="0>0|1|1|1|0|2"/>
+        <i3dMapping id="frame07Ref" node="0>0|1|1|1|0|3"/>
+        <i3dMapping id="frame07" node="0>0|1|1|1|1"/>
+        <i3dMapping id="supportSpring07" node="0>0|1|1|1|2"/>
+        <i3dMapping id="bultsBBF07D" node="0>0|1|1|1|2|0"/>
+        <i3dMapping id="molla7" node="0>0|1|1|1|2|1"/>
+        <i3dMapping id="joint13" node="0>0|1|1|1|2|1|0"/>
+        <i3dMapping id="bultsBBF07" node="0>0|1|1|1|3"/>
+        <i3dMapping id="attachFrame13" node="0>0|1|1|2"/>
+        <i3dMapping id="RabeBlueBird13" node="0>0|1|1|2|0"/>
+        <i3dMapping id="bultsBB13" node="0>0|1|1|2|0|0"/>
+        <i3dMapping id="joint12" node="0>0|1|1|2|0|1"/>
+        <i3dMapping id="supportSpringRef13" node="0>0|1|1|2|0|2"/>
+        <i3dMapping id="frame13Ref" node="0>0|1|1|2|0|3"/>
+        <i3dMapping id="frame13" node="0>0|1|1|2|1"/>
+        <i3dMapping id="supportSpring13" node="0>0|1|1|2|2"/>
+        <i3dMapping id="bultsBBF13D" node="0>0|1|1|2|2|0"/>
+        <i3dMapping id="molla6" node="0>0|1|1|2|2|1"/>
+        <i3dMapping id="joint11" node="0>0|1|1|2|2|1|0"/>
+        <i3dMapping id="bultsBBF13" node="0>0|1|1|2|3"/>
+        <i3dMapping id="bults_Left" node="0>0|1|2"/>
+        <i3dMapping id="SupportRollerLeft" node="0>0|1|3"/>
+        <i3dMapping id="RollerLeft" node="0>0|1|3|0"/>
+        <i3dMapping id="bultsRollerSX" node="0>0|1|3|1"/>
+        <i3dMapping id="wheelRollerLeft" node="0>0|1|3|2"/>
+        <i3dMapping id="colSupportL" node="0>0|1|3|3"/>
+        <i3dMapping id="bluebird_sx" node="0>0|1|3|4"/>
+        <i3dMapping id="colPart01" node="0>0|1|4"/>
+        <i3dMapping id="left" node="0>0|1|5"/>
+        <i3dMapping id="refRabeLeft" node="0>0|1|5|0"/>
+        <i3dMapping id="effectLeft" node="0>0|1|6"/>
+        <i3dMapping id="soilEmitShapeLeftArm" node="0>0|1|6|0"/>
+        <i3dMapping id="soilAnimationLeft" node="0>0|1|6|1"/>
+        <i3dMapping id="dustEmitterShapeLeft" node="0>0|1|6|2"/>
+        <i3dMapping id="foliage_bendingL" node="0>0|1|6|3"/>
+        <i3dMapping id="rabe_sx" node="0>0|1|7"/>
+        <i3dMapping id="rabeBB_Right" node="0>0|2"/>
+        <i3dMapping id="movingPartsRight" node="0>0|2|0"/>
+        <i3dMapping id="wheelSupportRight" node="0>0|2|0|0"/>
+        <i3dMapping id="rotWheelSRight" node="0>0|2|0|0|0"/>
+        <i3dMapping id="rotWheelSupportRight" node="0>0|2|0|0|0|0"/>
+        <i3dMapping id="rimWheelRight" node="0>0|2|0|0|0|0|0"/>
+        <i3dMapping id="wheelFrontRight" node="0>0|2|0|0|0|0|0|0"/>
+        <i3dMapping id="wheelSupportHitchRightFrame" node="0>0|2|0|0|1"/>
+        <i3dMapping id="werk_dx" node="0>0|2|0|0|2"/>
+        <i3dMapping id="wheelSupportHitchRight" node="0>0|2|0|1"/>
+        <i3dMapping id="supportWheelDX" node="0>0|2|0|2"/>
+        <i3dMapping id="regolazioneAltezzaRuotaDX" node="0>0|2|0|2|0"/>
+        <i3dMapping id="rotWheelDX" node="0>0|2|0|2|0|0"/>
+        <i3dMapping id="attachWheelDX" node="0>0|2|0|2|0|1"/>
+        <i3dMapping id="wheelConfigRight" node="0>0|2|0|2|0|1|0"/>
+        <i3dMapping id="bultsWheelConfigDX2" node="0>0|2|0|2|0|2"/>
+        <i3dMapping id="bultsWheelConfigDX" node="0>0|2|0|2|1"/>
+        <i3dMapping id="dentiBlueBird_1" node="0>0|2|1"/>
+        <i3dMapping id="attachFrame01" node="0>0|2|1|0"/>
+        <i3dMapping id="RabeBlueBird01" node="0>0|2|1|0|0"/>
+        <i3dMapping id="bultsBB01" node="0>0|2|1|0|0|0"/>
+        <i3dMapping id="joint26" node="0>0|2|1|0|0|1"/>
+        <i3dMapping id="supportSpringRef01" node="0>0|2|1|0|0|2"/>
+        <i3dMapping id="frame01Ref" node="0>0|2|1|0|0|3"/>
+        <i3dMapping id="frame01" node="0>0|2|1|0|1"/>
+        <i3dMapping id="supportSpring01" node="0>0|2|1|0|2"/>
+        <i3dMapping id="bultsBBF01D" node="0>0|2|1|0|2|0"/>
+        <i3dMapping id="molla13" node="0>0|2|1|0|2|1"/>
+        <i3dMapping id="joint25" node="0>0|2|1|0|2|1|0"/>
+        <i3dMapping id="bultsBBF01" node="0>0|2|1|0|3"/>
+        <i3dMapping id="attachFrame02" node="0>0|2|1|1"/>
+        <i3dMapping id="RabeBlueBird02" node="0>0|2|1|1|0"/>
+        <i3dMapping id="bultsBB02" node="0>0|2|1|1|0|0"/>
+        <i3dMapping id="joint24" node="0>0|2|1|1|0|1"/>
+        <i3dMapping id="supportSpringRef02" node="0>0|2|1|1|0|2"/>
+        <i3dMapping id="frame02Ref" node="0>0|2|1|1|0|3"/>
+        <i3dMapping id="frame02" node="0>0|2|1|1|1"/>
+        <i3dMapping id="supportSpring02" node="0>0|2|1|1|2"/>
+        <i3dMapping id="bultsBBF02D" node="0>0|2|1|1|2|0"/>
+        <i3dMapping id="molla12" node="0>0|2|1|1|2|1"/>
+        <i3dMapping id="joint23" node="0>0|2|1|1|2|1|0"/>
+        <i3dMapping id="bultsBBF02" node="0>0|2|1|1|3"/>
+        <i3dMapping id="attachFrame08" node="0>0|2|1|2"/>
+        <i3dMapping id="RabeBlueBird08" node="0>0|2|1|2|0"/>
+        <i3dMapping id="bultsBB08" node="0>0|2|1|2|0|0"/>
+        <i3dMapping id="joint2_0" node="0>0|2|1|2|0|1"/>
+        <i3dMapping id="supportSpringRef08" node="0>0|2|1|2|0|2"/>
+        <i3dMapping id="frame08Ref" node="0>0|2|1|2|0|3"/>
+        <i3dMapping id="frame08" node="0>0|2|1|2|1"/>
+        <i3dMapping id="supportSpring08" node="0>0|2|1|2|2"/>
+        <i3dMapping id="bultsBBF08D" node="0>0|2|1|2|2|0"/>
+        <i3dMapping id="molla1" node="0>0|2|1|2|2|1"/>
+        <i3dMapping id="joint1_0" node="0>0|2|1|2|2|1|0"/>
+        <i3dMapping id="bultsBBF08" node="0>0|2|1|2|3"/>
+        <i3dMapping id="bults_Right" node="0>0|2|2"/>
+        <i3dMapping id="SupportRollerRight" node="0>0|2|3"/>
+        <i3dMapping id="RollerRight" node="0>0|2|3|0"/>
+        <i3dMapping id="bultsRollerDX" node="0>0|2|3|1"/>
+        <i3dMapping id="wheelRollerRight" node="0>0|2|3|2"/>
+        <i3dMapping id="colSupportR" node="0>0|2|3|3"/>
+        <i3dMapping id="bluebird_dx" node="0>0|2|3|4"/>
+        <i3dMapping id="colPart02" node="0>0|2|4"/>
+        <i3dMapping id="right" node="0>0|2|5"/>
+        <i3dMapping id="refRabeRight" node="0>0|2|5|0"/>
+        <i3dMapping id="effectRight" node="0>0|2|6"/>
+        <i3dMapping id="soilEmitShapeRightArm" node="0>0|2|6|0"/>
+        <i3dMapping id="soilAnimationRight" node="0>0|2|6|1"/>
+        <i3dMapping id="dustEmitterShapeRight" node="0>0|2|6|2"/>
+        <i3dMapping id="foliage_bendingR" node="0>0|2|6|3"/>
+        <i3dMapping id="rabe_dx" node="0>0|2|7"/>
+        <i3dMapping id="rabeBB_Mid" node="0>0|3"/>
+        <i3dMapping id="configParts" node="0>0|3|0"/>
+        <i3dMapping id="frontAttachBB" node="0>0|3|0|0"/>
+        <i3dMapping id="SupportRollerMid" node="0>0|3|0|1"/>
+        <i3dMapping id="RollerMid" node="0>0|3|0|1|0"/>
+        <i3dMapping id="bultsRollerMid" node="0>0|3|0|1|1"/>
+        <i3dMapping id="wheelRollerMid" node="0>0|3|0|1|2"/>
+        <i3dMapping id="colSupportM" node="0>0|3|0|1|3"/>
+        <i3dMapping id="bults_Mid" node="0>0|3|1"/>
+        <i3dMapping id="movingPartsFoldable" node="0>0|3|2"/>
+        <i3dMapping id="rabeBB_LeftFrame" node="0>0|3|2|0"/>
+        <i3dMapping id="refPistoneLeft" node="0>0|3|2|0|0"/>
+        <i3dMapping id="rabeBB_RightFrame" node="0>0|3|2|1"/>
+        <i3dMapping id="refPistoneRight" node="0>0|3|2|1|0"/>
+        <i3dMapping id="PistoneSX" node="0>0|3|2|2"/>
+        <i3dMapping id="pistoneLeft" node="0>0|3|2|2|0"/>
+        <i3dMapping id="steloLeft" node="0>0|3|2|2|0|0"/>
+        <i3dMapping id="joint2_1" node="0>0|3|2|2|0|1"/>
+        <i3dMapping id="pistoneRight" node="0>0|3|2|3"/>
+        <i3dMapping id="steloRight" node="0>0|3|2|3|0"/>
+        <i3dMapping id="joint2_2" node="0>0|3|2|3|1"/>
+        <i3dMapping id="dentiBlueBird_2" node="0>0|3|3"/>
+        <i3dMapping id="attachFrame03" node="0>0|3|3|0"/>
+        <i3dMapping id="RabeBlueBird03" node="0>0|3|3|0|0"/>
+        <i3dMapping id="bultsBB03" node="0>0|3|3|0|0|0"/>
+        <i3dMapping id="joint22" node="0>0|3|3|0|0|1"/>
+        <i3dMapping id="supportSpringRef03" node="0>0|3|3|0|0|2"/>
+        <i3dMapping id="frame03Ref" node="0>0|3|3|0|0|3"/>
+        <i3dMapping id="frame03" node="0>0|3|3|0|1"/>
+        <i3dMapping id="supportSpring03" node="0>0|3|3|0|2"/>
+        <i3dMapping id="bultsBBF03D" node="0>0|3|3|0|2|0"/>
+        <i3dMapping id="molla11" node="0>0|3|3|0|2|1"/>
+        <i3dMapping id="joint21" node="0>0|3|3|0|2|1|0"/>
+        <i3dMapping id="bultsBBF03" node="0>0|3|3|0|3"/>
+        <i3dMapping id="attachFrame04" node="0>0|3|3|1"/>
+        <i3dMapping id="RabeBlueBird04" node="0>0|3|3|1|0"/>
+        <i3dMapping id="bultsBB04" node="0>0|3|3|1|0|0"/>
+        <i3dMapping id="joint20" node="0>0|3|3|1|0|1"/>
+        <i3dMapping id="supportSpringRef04" node="0>0|3|3|1|0|2"/>
+        <i3dMapping id="frame04Ref" node="0>0|3|3|1|0|3"/>
+        <i3dMapping id="frame04" node="0>0|3|3|1|1"/>
+        <i3dMapping id="supportSpring04" node="0>0|3|3|1|2"/>
+        <i3dMapping id="bultsBBF04D" node="0>0|3|3|1|2|0"/>
+        <i3dMapping id="molla10" node="0>0|3|3|1|2|1"/>
+        <i3dMapping id="joint19" node="0>0|3|3|1|2|1|0"/>
+        <i3dMapping id="bultsBBF04" node="0>0|3|3|1|3"/>
+        <i3dMapping id="attachFrame05" node="0>0|3|3|2"/>
+        <i3dMapping id="RabeBlueBird05" node="0>0|3|3|2|0"/>
+        <i3dMapping id="bultsBB05" node="0>0|3|3|2|0|0"/>
+        <i3dMapping id="joint18" node="0>0|3|3|2|0|1"/>
+        <i3dMapping id="supportSpringRef05" node="0>0|3|3|2|0|2"/>
+        <i3dMapping id="frame05Ref" node="0>0|3|3|2|0|3"/>
+        <i3dMapping id="frame05" node="0>0|3|3|2|1"/>
+        <i3dMapping id="supportSpring05" node="0>0|3|3|2|2"/>
+        <i3dMapping id="bultsBBF05D" node="0>0|3|3|2|2|0"/>
+        <i3dMapping id="molla9" node="0>0|3|3|2|2|1"/>
+        <i3dMapping id="joint17" node="0>0|3|3|2|2|1|0"/>
+        <i3dMapping id="bultsBBF05" node="0>0|3|3|2|3"/>
+        <i3dMapping id="attachFrame09" node="0>0|3|3|3"/>
+        <i3dMapping id="RabeBlueBird09" node="0>0|3|3|3|0"/>
+        <i3dMapping id="bultsBB09" node="0>0|3|3|3|0|0"/>
+        <i3dMapping id="joint4" node="0>0|3|3|3|0|1"/>
+        <i3dMapping id="supportSpringRef09" node="0>0|3|3|3|0|2"/>
+        <i3dMapping id="frame09Ref" node="0>0|3|3|3|0|3"/>
+        <i3dMapping id="frame09" node="0>0|3|3|3|1"/>
+        <i3dMapping id="supportSpring09" node="0>0|3|3|3|2"/>
+        <i3dMapping id="bultsBBF09D" node="0>0|3|3|3|2|0"/>
+        <i3dMapping id="molla2" node="0>0|3|3|3|2|1"/>
+        <i3dMapping id="joint3" node="0>0|3|3|3|2|1|0"/>
+        <i3dMapping id="bultsBBF09" node="0>0|3|3|3|3"/>
+        <i3dMapping id="attachFrame10" node="0>0|3|3|4"/>
+        <i3dMapping id="RabeBlueBird10" node="0>0|3|3|4|0"/>
+        <i3dMapping id="bultsBB10" node="0>0|3|3|4|0|0"/>
+        <i3dMapping id="joint6" node="0>0|3|3|4|0|1"/>
+        <i3dMapping id="supportSpringRef10" node="0>0|3|3|4|0|2"/>
+        <i3dMapping id="frame10Ref" node="0>0|3|3|4|0|3"/>
+        <i3dMapping id="frame10" node="0>0|3|3|4|1"/>
+        <i3dMapping id="supportSpring10" node="0>0|3|3|4|2"/>
+        <i3dMapping id="bultsBBF10D" node="0>0|3|3|4|2|0"/>
+        <i3dMapping id="molla3" node="0>0|3|3|4|2|1"/>
+        <i3dMapping id="joint5" node="0>0|3|3|4|2|1|0"/>
+        <i3dMapping id="bultsBBF10" node="0>0|3|3|4|3"/>
+        <i3dMapping id="attachFrame11" node="0>0|3|3|5"/>
+        <i3dMapping id="RabeBlueBird11" node="0>0|3|3|5|0"/>
+        <i3dMapping id="bultsBB11" node="0>0|3|3|5|0|0"/>
+        <i3dMapping id="joint8" node="0>0|3|3|5|0|1"/>
+        <i3dMapping id="supportSpringRef11" node="0>0|3|3|5|0|2"/>
+        <i3dMapping id="frame11Ref" node="0>0|3|3|5|0|3"/>
+        <i3dMapping id="frame11" node="0>0|3|3|5|1"/>
+        <i3dMapping id="supportSpring11" node="0>0|3|3|5|2"/>
+        <i3dMapping id="bultsBBF11D" node="0>0|3|3|5|2|0"/>
+        <i3dMapping id="molla4" node="0>0|3|3|5|2|1"/>
+        <i3dMapping id="joint7" node="0>0|3|3|5|2|1|0"/>
+        <i3dMapping id="bultsBBF11" node="0>0|3|3|5|3"/>
+        <i3dMapping id="attachFrame12" node="0>0|3|3|6"/>
+        <i3dMapping id="RabeBlueBird12" node="0>0|3|3|6|0"/>
+        <i3dMapping id="bultsBB12" node="0>0|3|3|6|0|0"/>
+        <i3dMapping id="joint10" node="0>0|3|3|6|0|1"/>
+        <i3dMapping id="supportSpringRef12" node="0>0|3|3|6|0|2"/>
+        <i3dMapping id="frame12Ref" node="0>0|3|3|6|0|3"/>
+        <i3dMapping id="frame12" node="0>0|3|3|6|1"/>
+        <i3dMapping id="supportSpring12" node="0>0|3|3|6|2"/>
+        <i3dMapping id="bultsBBF12D" node="0>0|3|3|6|2|0"/>
+        <i3dMapping id="molla5" node="0>0|3|3|6|2|1"/>
+        <i3dMapping id="joint9" node="0>0|3|3|6|2|1|0"/>
+        <i3dMapping id="bultsBBF12" node="0>0|3|3|6|3"/>
+        <i3dMapping id="dynamicHoses" node="0>0|3|4"/>
+        <i3dMapping id="hoses01" node="0>0|3|4|0"/>
+        <i3dMapping id="hoses02" node="0>0|3|4|1"/>
+        <i3dMapping id="hoses03" node="0>0|3|4|2"/>
+        <i3dMapping id="hoses04" node="0>0|3|4|3"/>
+        <i3dMapping id="hoses05" node="0>0|3|4|4"/>
+        <i3dMapping id="hoses06" node="0>0|3|4|5"/>
+        <i3dMapping id="hoses07" node="0>0|3|4|6"/>
+        <i3dMapping id="hoses08" node="0>0|3|4|7"/>
+        <i3dMapping id="Fasciette" node="0>0|3|4|8"/>
+        <i3dMapping id="dynamicHoses01" node="0>0|3|4|9"/>
+        <i3dMapping id="dynamicHoses02" node="0>0|3|4|9|0"/>
+        <i3dMapping id="joint1_1" node="0>0|3|4|9|1"/>
+        <i3dMapping id="dynamicHoses03" node="0>0|3|4|10"/>
+        <i3dMapping id="dynamicHoses04" node="0>0|3|4|10|0"/>
+        <i3dMapping id="joint1_2" node="0>0|3|4|10|1"/>
+        <i3dMapping id="workArea" node="0>0|3|5"/>
+        <i3dMapping id="workAreaStart" node="0>0|3|5|0"/>
+        <i3dMapping id="workAreaWidth" node="0>0|3|5|1"/>
+        <i3dMapping id="workAreaHeight" node="0>0|3|5|2"/>
+        <i3dMapping id="groundReferenceNode" node="0>0|3|5|3"/>
+        <i3dMapping id="workAreaStartLeft" node="0>0|3|5|4"/>
+        <i3dMapping id="workAreaWidthLeft" node="0>0|3|5|5"/>
+        <i3dMapping id="workAreaHeightLeft" node="0>0|3|5|6"/>
+        <i3dMapping id="workAreaStartRight" node="0>0|3|5|7"/>
+        <i3dMapping id="workAreaWidthRight" node="0>0|3|5|8"/>
+        <i3dMapping id="workAreaHeightRight" node="0>0|3|5|9"/>
+        <i3dMapping id="ai" node="0>0|3|6"/>
+        <i3dMapping id="aiMarkerLeft" node="0>0|3|6|0"/>
+        <i3dMapping id="aiMarkerRight" node="0>0|3|6|1"/>
+        <i3dMapping id="aiMarkerBack" node="0>0|3|6|2"/>
+        <i3dMapping id="effect" node="0>0|3|7"/>
+        <i3dMapping id="soilAnimation" node="0>0|3|7|0"/>
+        <i3dMapping id="soilEmitShapeArm" node="0>0|3|7|1"/>
+        <i3dMapping id="dustEmitterShapeMid" node="0>0|3|7|2"/>
+        <i3dMapping id="foliage_bendingM" node="0>0|3|7|3"/>
+        <i3dMapping id="hydraulics" node="0>0|3|8"/>
+        <i3dMapping id="hydraulicIn01" node="0>0|3|8|0"/>
+        <i3dMapping id="hydraulicOut02" node="0>0|3|8|1"/>
+        <i3dMapping id="connectors" node="0>0|3|9"/>
+        <i3dMapping id="connector01" node="0>0|3|9|0"/>
+        <i3dMapping id="connector02" node="0>0|3|9|1"/>
+        <i3dMapping id="warningDecalsMid" node="0>0|3|10"/>
+        <i3dMapping id="warningDecalsRight" node="0>0|3|11"/>
+    </i3dMappings>
+    <!--Non converted elements, might require manual conversion or are obsolete:
+
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle>
+    <cylindered>
+        <movingTools>
+            <movingTool wheelIndices=""/>
+            <movingTool wheelIndices=""/>
+            <movingTool>
+                <translation transSpeed="0.15" transAcceleration="10" transMax="1.031" transMin="0.75" translationAxis="2"/>
+                <animation animSpeed="3" animAcceleration="-5" animName="manovella"/>
+            </movingTool>
+            <movingTool>
+                <translation transSpeed="0.15" transAcceleration="10" transMax="1.031" transMin="0.75" translationAxis="2"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart>
+                <rotatingPart node="rabeBB_LeftFrame"/>
+            </movingPart>
+            <movingPart>
+                <rotatingPart node="rabeBB_RightFrame"/>
+            </movingPart>
+        </movingParts>
+    </cylindered>
+</vehicle>
+-->
+</vehicle>

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="BlueBird 6000" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="22" filename="$data/shared/assets/assetLibraryStickers_diffuse.dds"/>
+    <File fileId="10" filename="$data/shared/default_normal.dds"/>
+    <File fileId="23" filename="$data/shared/default_specular.dds"/>
+    <File fileId="8" filename="$data/shared/detailArray_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/detailArray_normal.png"/>
+    <File fileId="6" filename="$data/shared/detailArray_specular.png"/>
+    <File fileId="11" filename="../textures/DINScrews_Mat_diffuse.dds"/>
+    <File fileId="12" filename="../textures/DINScrews_Mat_normal.dds"/>
+    <File fileId="13" filename="../textures/DINScrews_Mat_specular.dds"/>
+    <File fileId="9" filename="../textures/FS19_RabeBluebird6000_decals.dds"/>
+    <File fileId="3" filename="../textures/RabeBlueBird_normal.dds"/>
+    <File fileId="4" filename="../textures/RabeBlueBird_specular.dds"/>
+    <File fileId="19" filename="../textures/hosesDiffuse.dds"/>
+    <File fileId="20" filename="../textures/hosesNormal.dds"/>
+    <File fileId="21" filename="../textures/hosesSpecular.dds"/>
+    <File fileId="14" filename="../textures/rabeCultivator_normal.dds"/>
+    <File fileId="15" filename="../textures/rabeCultivator_speculr.dds"/>
+    <File fileId="17" filename="../textures/roller_normal.dds"/>
+    <File fileId="18" filename="../textures/roller_specular.dds"/>
+    <File fileId="16" filename="../textures/spring_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bults_mat" materialId="4" customShaderId="5" customShaderVariation="colorMask">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Decal_rabe" materialId="5" customShaderId="5" customShaderVariation="Decal">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Decal_roller" materialId="6" alphaBlending="true" customShaderId="5" customShaderVariation="Decal">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="18"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.081 0"/>
+    </Material>
+    <Material name="Hazard_decal" materialId="7" customShaderId="5" customShaderVariation="Decal">
+      <Texture fileId="22"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="23"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="hoses_mat" materialId="8" customShaderId="5">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <CustomParameter name="RDT" value="1 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Rabe_vis" materialId="10" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.084 0.238 0.617 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="rabeCultivator_mat" materialId="11" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.084 0.238 0.617 0"/>
+      <CustomParameter name="colorMat1" value="0.05 0.05 0.05 0"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="roller_mat" materialId="12" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.084 0.238 0.617 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="spring_mat" materialId="13" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="16"/>
+      <CustomParameter name="RDT" value="1 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.084 0.238 0.617 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="RabeBlueBird.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="rabe_main_component1" dynamic="true" compound="true" collisionMask="8194" clipDistance="300" nodeId="191" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="RabeBlueBird_vis" clipDistance="300" nodeId="192" materialIds="10" castsShadows="true" receiveShadows="true" skinBindNodeIds="192 200 270">
+          <TransformGroup name="attachable" nodeId="193">
+            <TransformGroup name="attacherJoint" translation="5.55344e-09 0.664464 1.87048" rotation="90 80 90" nodeId="194"/>
+            <TransformGroup name="topReferenceNode" translation="-0.00745404 1.52712 1.83974" nodeId="195"/>
+            <TransformGroup name="attacherJoint1" translation="-6.87489e-08 0.664464 0.170641" rotation="0 -90 0" nodeId="196"/>
+            <TransformGroup name="topReferenceNode1" translation="-0.00745404 1.40771 0.115322" rotation="-7.57875e-06 180 1.1201e-05" nodeId="197"/>
+            <TransformGroup name="support" nodeId="198">
+              <Shape shapeId="3" name="supportCol" translation="0 0 0.657" compoundChild="true" collisionMask="8194" density="0.001" nodeId="199" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="rabeBB_Left" translation="1.54436 1.08271 1.01039" clipDistance="300" nodeId="200">
+            <TransformGroup name="movingPartsLeft" translation="-1.54436 -1.08271 -1.01039" nodeId="201">
+              <Shape shapeId="4" name="wheelSupportLeft" translation="2.36869 0.904582 1.74844" rotation="10 -0 0" clipDistance="300" nodeId="202" materialIds="10" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="rotWheelSLeft" translation="-0.0113699 -0.0175993 0.723884" rotation="-10 -0 0" nodeId="203">
+                  <Shape shapeId="5" name="rotWheelSupportLeft" translation="0 5.96046e-08 0" rotation="100 -0 0" clipDistance="300" nodeId="204" materialIds="10" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="6" name="rimWheelLeft" translation="-0.07008 -0.101144 0.436357" rotation="-100 -0 0" clipDistance="300" nodeId="205" materialIds="10" castsShadows="true" receiveShadows="true">
+                      <TransformGroup name="wheelFrontLeft" translation="0.097 0.023 0" scale="0.8 0.8 0.8" nodeId="206"/>
+                    </Shape>
+                  </Shape>
+                </TransformGroup>
+                <TransformGroup name="wheelSupportHitchLeftFrame" translation="0.02531 0.106873 0.468906" rotation="5 -0 0" nodeId="207"/>
+                <Shape shapeId="7" name="werk_sx" rotation="8.53774e-07 -0 0" clipDistance="300" nodeId="208" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+              <Shape shapeId="8" name="wheelSupportHitchLeft" translation="2.394 1.05105 1.77107" rotation="15 -0 0" clipDistance="300" nodeId="209" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="supportWheelSX" clipDistance="300" nodeId="210" materialIds="10" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="10" name="regolazioneAltezzaRuotaSX" translation="3.052 0.947549 0.831" clipDistance="300" nodeId="211" materialIds="10" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="11" name="rotWheelSX" clipDistance="300" nodeId="212" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="12" name="attachWheelSX" translation="0.0952101 -0.470607 0.086777" clipDistance="300" nodeId="213" materialIds="10" castsShadows="true" receiveShadows="true">
+                    <TransformGroup name="wheelConfigLeft" translation="0.129 0.023 0" scale="0.8 0.8 0.8" nodeId="214"/>
+                  </Shape>
+                  <Shape shapeId="13" name="bultsWheelConfigSX2" translation="-3.052 -0.947549 -0.831" clipDistance="300" nodeId="215" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+                <Shape shapeId="14" name="bultsWheelConfigSX" clipDistance="300" nodeId="216" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="dentiBlueBird" translation="-1.54436 -1.08271 -1.01039" nodeId="217">
+              <Shape shapeId="15" name="attachFrame06" translation="0.062 0 0" clipDistance="300" nodeId="218" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="16" name="RabeBlueBird06" translation="1.76838 0.73863 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="219" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="17" name="bultsBB06" translation="-1.76838 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="220" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint16" translation="0.0076201 -0.111261 0.221406" rotation="-180 -7.31025e-07 -9.61127e-07" nodeId="221"/>
+                  <TransformGroup name="supportSpringRef06" translation="-0.000129938 -0.0722177 0.253244" rotation="-54.625 -0 0" nodeId="222"/>
+                  <TransformGroup name="frame06Ref" translation="-0.000149965 -0.0627739 0.396682" rotation="-16.426 -0 0" nodeId="223"/>
+                </Shape>
+                <Shape shapeId="18" name="frame06" translation="1.76823 0.918417 1.53624" rotation="163.574 -0 0" clipDistance="300" nodeId="224" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="19" name="supportSpring06" translation="1.76825 1.17509 1.54138" rotation="125.375 -0 0" clipDistance="300" nodeId="225" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="20" name="bultsBBF06D" translation="-1.76825 -0.576521 1.85049" rotation="-125.375 -0 0" clipDistance="300" nodeId="226" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="21" name="molla8" translation="0.4289 0.106365 1.37139" rotation="144.625 -0 0" clipDistance="300" nodeId="227" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="228 221">
+                    <TransformGroup name="joint15" translation="-0.42115 -0.687355 1.17214" rotation="90 56.9112 90" nodeId="228"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="22" name="bultsBBF06" clipDistance="300" nodeId="229" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="23" name="attachFrame07" translation="0.15 0 0" clipDistance="300" nodeId="230" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="24" name="RabeBlueBird07" translation="2.68276 0.73863 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="231" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="25" name="bultsBB07" translation="-2.68276 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="232" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint14" translation="0.02 -0.105114 0.233699" rotation="180 -6.74267e-07 -9.72616e-07" nodeId="233"/>
+                  <TransformGroup name="supportSpringRef07" translation="-0.000129938 -0.0503946 0.270791" rotation="-54.423 -0 0" nodeId="234"/>
+                  <TransformGroup name="frame07Ref" translation="-0.000139952 -0.0641431 0.391306" rotation="-16.455 -0 0" nodeId="235"/>
+                </Shape>
+                <Shape shapeId="26" name="frame07" translation="2.68262 0.918417 1.53624" rotation="163.545 -0 0" clipDistance="300" nodeId="236" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="27" name="supportSpring07" translation="2.68263 1.17509 1.54138" rotation="125.577 -0 0" clipDistance="300" nodeId="237" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="28" name="bultsBBF07D" translation="-2.68263 -0.569994 1.85251" rotation="-125.577 -0 0" clipDistance="300" nodeId="238" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="29" name="molla7" translation="0.42901 0.106107 1.37807" rotation="144.423 -0 0" clipDistance="300" nodeId="239" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="240 233">
+                    <TransformGroup name="joint13" translation="-0.40888 -0.693558 1.17288" rotation="90 55.9744 90" nodeId="240"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="30" name="bultsBBF07" clipDistance="300" nodeId="241" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="31" name="attachFrame13" translation="0.108 0 0" clipDistance="300" nodeId="242" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="32" name="RabeBlueBird13" translation="2.22672 0.73863 0.716221" rotation="180 -0 0" clipDistance="300" nodeId="243" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="33" name="bultsBB13" translation="-2.22672 0.73863 0.716221" rotation="-180 -0 0" clipDistance="300" nodeId="244" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint12" translation="0.01368 -0.113172 0.23559" rotation="-180 -7.69322e-07 -9.52828e-07" nodeId="245"/>
+                  <TransformGroup name="supportSpringRef13" translation="-0.000130177 -0.0612443 0.263151" rotation="-54.411 -0 0" nodeId="246"/>
+                  <TransformGroup name="frame13Ref" translation="-0.000150204 -0.052061 0.426209" rotation="-16.674 -0 0" nodeId="247"/>
+                </Shape>
+                <Shape shapeId="34" name="frame13" translation="2.22657 0.918417 0.716448" rotation="163.326 -0 0" clipDistance="300" nodeId="248" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="35" name="supportSpring13" translation="2.22659 1.17509 0.721589" rotation="125.589 -0 0" clipDistance="300" nodeId="249" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="36" name="bultsBBF13D" translation="-2.22659 0.0970581 1.37554" rotation="-125.589 -0 0" clipDistance="300" nodeId="250" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="37" name="molla6" translation="0.43193 0.0970581 1.37554" rotation="144.411 -0 0" clipDistance="300" nodeId="251" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="252 245">
+                    <TransformGroup name="joint11" translation="-0.41812 -0.686427 1.1754" rotation="90 57.5451 90" nodeId="252"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="38" name="bultsBBF13" clipDistance="300" nodeId="253" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <Shape shapeId="39" name="bults_Left" translation="-1.54436 -1.08271 -1.01039" clipDistance="300" nodeId="254" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="40" name="SupportRollerLeft" translation="0.73876 -0.15417 -0.142731" clipDistance="300" nodeId="255" materialIds="12" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="41" name="RollerLeft" translation="-0.0423899 -0.699529 -2.05551" clipDistance="300" nodeId="256" materialIds="12" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="42" name="bultsRollerSX" translation="-2.28312 -0.92854 -0.867659" clipDistance="300" nodeId="257" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="wheelRollerLeft" translation="-0.042 -0.581 -2.05551" nodeId="258"/>
+              <Shape shapeId="43" name="colSupportL" translation="-2.28312 -0.92854 -0.867659" static="true" compoundChild="true" collisionMask="8194" clipDistance="300" nodeId="259" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="44" name="bluebird_sx" translation="-2.28312 -0.92854 -0.867659" clipDistance="300" nodeId="260" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="45" name="colPart01" translation="-1.54436 -1.08271 -1.01039" static="true" compoundChild="true" collisionMask="8194" clipDistance="300" nodeId="261" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="left" translation="-1.54436 -1.08271 -1.01039" nodeId="262">
+              <TransformGroup name="refRabeLeft" translation="1.74 0.858046 1.00257" rotation="-0 90 0" nodeId="263"/>
+            </TransformGroup>
+            <TransformGroup name="effectLeft" translation="-1.54436 -1.08271 -1.01039" nodeId="264">
+              <Shape shapeId="46" name="soilEmitShapeLeftArm" translation="2.00767 -0.050345 0.828947" clipDistance="300" nodeId="265" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="47" name="soilAnimationLeft" nodeId="266" materialIds="9"/>
+              <Shape shapeId="48" name="dustEmitterShapeLeft" translation="1.91935 0 0.846515" scale="0.693908 1 0.725387" clipDistance="300" nodeId="267" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="foliage_bendingL" translation="2.08535 0 -1.088" nodeId="268"/>
+            </TransformGroup>
+            <Shape shapeId="49" name="rabe_sx" clipDistance="300" nodeId="269" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="rabeBB_Right" translation="-1.54436 1.08271 0.946723" rotation="0 -0 1.36604e-05" clipDistance="300" nodeId="270">
+            <TransformGroup name="movingPartsRight" translation="1.54436 -1.08271 -0.946723" rotation="0 -0 -1.36604e-05" nodeId="271">
+              <Shape shapeId="50" name="wheelSupportRight" translation="-2.40323 0.904582 1.74844" rotation="10.3 -0 0" clipDistance="300" nodeId="272" materialIds="10" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="rotWheelSRight" translation="0.0459099 -0.0138088 0.723966" rotation="-10.3 -0 0" nodeId="273">
+                  <Shape shapeId="51" name="rotWheelSupportRight" rotation="101 -0 0" clipDistance="300" nodeId="274" materialIds="10" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="52" name="rimWheelRight" translation="0.07008 -0.093513 0.438055" rotation="-101 -0 0" clipDistance="300" nodeId="275" materialIds="10" castsShadows="true" receiveShadows="true">
+                      <TransformGroup name="wheelFrontRight" translation="-0.097 0.023 0" scale="0.8 0.8 0.8" nodeId="276"/>
+                    </Shape>
+                  </Shape>
+                </TransformGroup>
+                <TransformGroup name="wheelSupportHitchRightFrame" translation="0.00806999 0.0872751 0.47131" rotation="7.3 -0 0" nodeId="277"/>
+                <Shape shapeId="53" name="werk_dx" translation="-2.38419e-07 -3.57628e-07 1.19209e-07" clipDistance="300" nodeId="278" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+              <Shape shapeId="54" name="wheelSupportHitchRight" translation="-2.39516 1.05105 1.77107" rotation="17.6 -0 0" clipDistance="300" nodeId="279" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="55" name="supportWheelDX" clipDistance="300" nodeId="280" materialIds="10" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="56" name="regolazioneAltezzaRuotaDX" translation="-3.05158 0.947549 0.830672" clipDistance="300" nodeId="281" materialIds="10" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="57" name="rotWheelDX" clipDistance="300" nodeId="282" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="58" name="attachWheelDX" translation="-0.0952101 -0.470607 0.086777" clipDistance="300" nodeId="283" materialIds="10" castsShadows="true" receiveShadows="true">
+                    <TransformGroup name="wheelConfigRight" translation="-0.12927 0.0234133 0" scale="0.8 0.8 0.8" nodeId="284"/>
+                  </Shape>
+                  <Shape shapeId="59" name="bultsWheelConfigDX2" translation="3.05158 -0.947549 -0.830672" clipDistance="300" nodeId="285" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+                <Shape shapeId="60" name="bultsWheelConfigDX" translation="-2.38419e-07 -3.57628e-07 0" clipDistance="300" nodeId="286" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="dentiBlueBird" translation="1.54436 -1.08271 -0.946723" rotation="0 -0 -1.36604e-05" nodeId="287">
+              <Shape shapeId="61" name="attachFrame01" translation="-0.15 0 0" clipDistance="300" nodeId="288" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="62" name="RabeBlueBird01" translation="-2.68276 0.739 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="289" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="63" name="bultsBB01" translation="2.68276 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="290" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint26" translation="0.0116401 -0.104382 0.226815" rotation="-180 -7.22797e-07 -9.62853e-07" nodeId="291"/>
+                  <TransformGroup name="supportSpringRef01" translation="0.000129938 -0.0582365 0.266916" rotation="-54.223 -0 0" nodeId="292"/>
+                  <TransformGroup name="frame01Ref" translation="0.000139952 -0.0633606 0.39293" rotation="-16.446 -0 0" nodeId="293"/>
+                </Shape>
+                <Shape shapeId="64" name="frame01" translation="-2.68262 0.918417 1.53624" rotation="163.554 -0 0" clipDistance="300" nodeId="294" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="65" name="supportSpring01" translation="-2.68263 1.17509 1.54138" rotation="125.777 -0 0" clipDistance="300" nodeId="295" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="66" name="bultsBBF01D" translation="2.68263 -0.563524 1.85449" rotation="-125.777 -0 0" clipDistance="300" nodeId="296" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="67" name="molla13" translation="0.42612 0.117881 1.37741" rotation="144.223 -0 0" clipDistance="300" nodeId="297" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="298 291">
+                    <TransformGroup name="joint25" translation="-0.41461 -0.693159 1.17627" rotation="90 56.7752 90" nodeId="298"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="68" name="bultsBBF01" clipDistance="300" nodeId="299" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="69" name="attachFrame02" translation="-0.062 0 0" clipDistance="300" nodeId="300" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="70" name="RabeBlueBird02" translation="-1.768 0.73863 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="301" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="71" name="bultsBB02" translation="1.76838 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="302" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint24" translation="0.00363994 -0.0995514 0.233256" rotation="-180 -7.30717e-07 -9.61193e-07" nodeId="303"/>
+                  <TransformGroup name="supportSpringRef02" translation="-0.000249982 -0.0509093 0.272258" rotation="-54.243 -0 0" nodeId="304"/>
+                  <TransformGroup name="frame02Ref" translation="-0.000229955 -0.063233 0.395659" rotation="-16.405 -0 0" nodeId="305"/>
+                </Shape>
+                <Shape shapeId="72" name="frame02" translation="-1.76823 0.918417 1.53624" rotation="163.595 -0 0" clipDistance="300" nodeId="306" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="73" name="supportSpring02" translation="-1.76825 1.17509 1.54138" rotation="125.757 -0 0" clipDistance="300" nodeId="307" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="74" name="bultsBBF02D" translation="1.76825 -0.564171 1.85429" rotation="-125.757 -0 0" clipDistance="300" nodeId="308" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="75" name="molla12" translation="0.42801 0.111827 1.38416" rotation="144.243 -0 0" clipDistance="300" nodeId="309" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="310 303">
+                    <TransformGroup name="joint23" translation="-0.4245 -0.690337 1.17525" rotation="90 56.9061 90" nodeId="310"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="76" name="bultsBBF02" clipDistance="300" nodeId="311" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="77" name="attachFrame08" translation="-0.108 0 0" clipDistance="300" nodeId="312" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="78" name="RabeBlueBird08" translation="-2.22672 0.73863 0.716221" rotation="180 -0 0" clipDistance="300" nodeId="313" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="79" name="bultsBB08" translation="2.22672 0.739 0.716221" rotation="-180 -0 0" clipDistance="300" nodeId="314" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint2" translation="-0.00717854 -0.107958 0.244514" rotation="180 4.66495e-15 5.33608e-08" nodeId="315"/>
+                  <TransformGroup name="supportSpringRef08" translation="0.000130177 -0.0597979 0.265112" rotation="-54.318 -0 0" nodeId="316"/>
+                  <TransformGroup name="frame08Ref" translation="0.000150204 -0.0585267 0.412978" rotation="-16.355 -0 0" nodeId="317"/>
+                </Shape>
+                <Shape shapeId="80" name="frame08" translation="-2.22657 0.918417 0.716448" rotation="163.645 -0 0" clipDistance="300" nodeId="318" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="81" name="supportSpring08" translation="-2.22659 1.17509 0.721589" rotation="125.682 -0 0" clipDistance="300" nodeId="319" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="82" name="bultsBBF08D" translation="2.22659 0.099291 1.37538" rotation="-125.682 -0 0" clipDistance="300" nodeId="320" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="83" name="molla1" translation="0.41946 0.099291 1.37538" rotation="144.318 -0 0" clipDistance="300" nodeId="321" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="322 315">
+                    <TransformGroup name="joint1" translation="-0.42603 -0.708092 1.19037" rotation="90.0003 89.4436 0.000257941" nodeId="322"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="84" name="bultsBBF08" clipDistance="300" nodeId="323" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <Shape shapeId="85" name="bults_Right" translation="1.54436 -1.08271 -0.946723" rotation="0 -0 -1.36604e-05" clipDistance="300" nodeId="324" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="86" name="SupportRollerRight" translation="-0.73876 -0.15417 -0.079064" rotation="0 -0 -1.36604e-05" clipDistance="300" nodeId="325" materialIds="12" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="87" name="RollerRight" translation="0.0423899 -0.699529 -2.05551" clipDistance="300" nodeId="326" materialIds="12" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="88" name="bultsRollerDX" translation="2.28312 -0.92854 -0.867659" clipDistance="300" nodeId="327" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="wheelRollerRight" translation="0.0423899 -0.581 -2.05551" nodeId="328"/>
+              <Shape shapeId="89" name="colSupportR" translation="2.28312 -0.92854 -0.867659" static="true" compoundChild="true" clipDistance="300" nodeId="329" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="90" name="bluebird_dx" translation="2.28312 -0.92854 -0.867659" clipDistance="300" nodeId="330" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="91" name="colPart02" translation="1.54436 -1.08271 -0.947" rotation="0 -0 -1.36604e-05" static="true" compoundChild="true" collisionMask="8194" clipDistance="300" nodeId="331" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="right" translation="1.54436 -1.08271 -0.946723" rotation="0 -0 -1.36604e-05" nodeId="332">
+              <TransformGroup name="refRabeRight" translation="-1.74 0.858 1.00257" rotation="-0 -90 0" nodeId="333"/>
+            </TransformGroup>
+            <TransformGroup name="effectRight" translation="1.54436 -1.08271 -0.946723" rotation="0 -0 -1.36604e-05" nodeId="334">
+              <Shape shapeId="92" name="soilEmitShapeRightArm" translation="-2.11308 -0.050345 0.936542" clipDistance="300" nodeId="335" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="93" name="soilAnimationRight" nodeId="336" materialIds="9"/>
+              <Shape shapeId="48" name="dustEmitterShapeRight" translation="-1.82047 -3.57628e-07 0.87611" scale="0.693908 1 0.67477" clipDistance="300" nodeId="337" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="foliage_bendingR" translation="-2.47968 -3.57628e-07 -1.088" nodeId="338"/>
+            </TransformGroup>
+            <Shape shapeId="94" name="rabe_dx" clipDistance="300" nodeId="339" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="rabeBB_Mid" nodeId="340">
+            <TransformGroup name="configParts" nodeId="341">
+              <Shape shapeId="95" name="frontAttachBB" translation="-2.98023e-07 0.696001 0.171948" clipDistance="300" nodeId="342" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="96" name="SupportRollerMid" translation="0 0.92854 0.867659" clipDistance="300" nodeId="343" materialIds="12" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="97" name="RollerMid" translation="0 -0.699 -2.05552" clipDistance="300" nodeId="344" materialIds="12" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="98" name="bultsRollerMid" translation="0 -0.92854 -0.867659" clipDistance="300" nodeId="345" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="wheelRollerMid" translation="0 -0.634 -2.05552" nodeId="346"/>
+                <Shape shapeId="99" name="colSupportM" translation="0 -0.92854 -0.867659" static="true" compoundChild="true" collisionMask="8194" clipDistance="300" nodeId="347" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </Shape>
+            </TransformGroup>
+            <Shape shapeId="100" name="bults_Mid" clipDistance="300" nodeId="348" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="movingPartsFoldable" nodeId="349">
+              <Shape shapeId="101" name="rabeBB_LeftFrame" translation="1.40522 0.848961 1.00257" rotation="-0 90 0" clipDistance="300" nodeId="350" materialIds="10" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="refPistoneLeft" translation="0.0281731 0.233009 0.191872" rotation="34.789 -0 0" nodeId="351"/>
+              </Shape>
+              <Shape shapeId="102" name="rabeBB_RightFrame" translation="-1.40522 0.848961 1.00257" rotation="-2.03555e-13 -90 0" clipDistance="300" nodeId="352" materialIds="10" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="refPistoneRight" translation="-0.0290741 0.234058 0.191976" rotation="34.789 -9.10782e-05 -9.30957e-05" nodeId="353"/>
+              </Shape>
+              <TransformGroup name="PistoneSX" nodeId="354">
+                <Shape shapeId="103" name="pistoneLeft" translation="0.421112 0.975604 0.974397" rotation="-5.14431 90 0" clipDistance="300" nodeId="355" materialIds="10" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="104" name="steloLeft" translation="-5.96046e-08 0.000493884 1.18078" rotation="0.12372 -0 0" clipDistance="300" nodeId="356" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint2" translation="-0.00186378 0.060973 0.487868" rotation="90 -84.8558 -90" nodeId="357"/>
+                </Shape>
+              </TransformGroup>
+              <Shape shapeId="105" name="pistoneRight" translation="-0.421112 0.976014 0.973498" rotation="-5.29745 -90 0" clipDistance="300" nodeId="358" materialIds="10" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="106" name="steloRight" translation="-1.96695e-06 -0.00203496 1.18094" rotation="5.07997e-05 -8.2094e-05 -0.000101107" clipDistance="300" nodeId="359" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="joint2" translation="0.00674331 0.0664044 0.490145" rotation="89.9981 84.7026 89.9981" nodeId="360"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="dentiBlueBird" nodeId="361">
+              <Shape shapeId="107" name="attachFrame03" clipDistance="300" nodeId="362" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="62" name="RabeBlueBird03" translation="-0.847225 0.73863 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="363" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="108" name="bultsBB03" translation="0.847225 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="364" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint22" translation="0.00671202 -0.101162 0.226816" rotation="180 -7.42127e-07 -9.58767e-07" nodeId="365"/>
+                  <TransformGroup name="supportSpringRef03" translation="0.000132024 -0.0461763 0.277429" rotation="-54.073 -0 0" nodeId="366"/>
+                  <TransformGroup name="frame03Ref" translation="0.000146985 -0.0560403 0.417452" rotation="-16.503 -0 0" nodeId="367"/>
+                </Shape>
+                <Shape shapeId="109" name="frame03" translation="-0.847078 0.918417 1.53624" rotation="163.497 -0 0" clipDistance="300" nodeId="368" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="110" name="supportSpring03" translation="-0.847093 1.17509 1.54138" rotation="125.927 -0 0" clipDistance="300" nodeId="369" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="111" name="bultsBBF03D" translation="0.847093 -0.558667 1.85596" rotation="-125.927 -0 0" clipDistance="300" nodeId="370" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="112" name="molla11" translation="0.423809 0.11994 1.37462" rotation="144.073 -0 0" clipDistance="300" nodeId="371" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="372 365">
+                    <TransformGroup name="joint21" translation="-0.417229 -0.689741 1.17658" rotation="90 57.0948 90" nodeId="372"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="113" name="bultsBBF03" clipDistance="300" nodeId="373" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="114" name="attachFrame04" clipDistance="300" nodeId="374" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="70" name="RabeBlueBird04" translation="-0.000200748 0.73863 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="375" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="115" name="bultsBB04" translation="0.000200748 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="376" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint20" translation="0.000200733 -0.109212 0.225206" rotation="180 -7.70541e-07 -9.52557e-07" nodeId="377"/>
+                  <TransformGroup name="supportSpringRef04" translation="0.000132322 -0.0480285 0.275828" rotation="-54.098 -0 0" nodeId="378"/>
+                  <TransformGroup name="frame04Ref" translation="0.000147104 -0.0590515 0.409704" rotation="-16.411 -0 0" nodeId="379"/>
+                </Shape>
+                <Shape shapeId="116" name="frame04" translation="-5.36442e-05 0.918417 1.53624" rotation="163.589 -0 0" clipDistance="300" nodeId="380" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="117" name="supportSpring04" translation="-6.84261e-05 1.17509 1.54138" rotation="125.902 -0 0" clipDistance="300" nodeId="381" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="118" name="bultsBBF04D" translation="6.84261e-05 -0.559476 1.85571" rotation="-125.902 -0 0" clipDistance="300" nodeId="382" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="119" name="molla10" translation="0.423475 0.116344 1.37383" rotation="144.098 -0 0" clipDistance="300" nodeId="383" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="384 377">
+                    <TransformGroup name="joint19" translation="-0.423407 -0.694897 1.18059" rotation="90 57.5653 90" nodeId="384"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="120" name="bultsBBF04" clipDistance="300" nodeId="385" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="121" name="attachFrame05" clipDistance="300" nodeId="386" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="24" name="RabeBlueBird05" translation="0.847225 0.73863 1.53601" rotation="180 -0 0" clipDistance="300" nodeId="387" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="122" name="bultsBB05" translation="-0.847225 0.73863 1.53601" rotation="-180 -0 0" clipDistance="300" nodeId="388" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint18" translation="0.00202799 -0.09897 0.229603" rotation="-180 -7.6972e-07 -9.52739e-07" nodeId="389"/>
+                  <TransformGroup name="supportSpringRef05" translation="-0.000132024 -0.047823 0.275584" rotation="-54.136 -0 0" nodeId="390"/>
+                  <TransformGroup name="frame05Ref" translation="-0.000146985 -0.0574278 0.412029" rotation="-16.531 -0 0" nodeId="391"/>
+                </Shape>
+                <Shape shapeId="123" name="frame05" translation="0.847078 0.918417 1.53624" rotation="163.469 -0 0" clipDistance="300" nodeId="392" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="124" name="supportSpring05" translation="0.847093 1.17509 1.54138" rotation="125.864 -0 0" clipDistance="300" nodeId="393" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="125" name="bultsBBF05D" translation="-0.847093 -0.560707 1.85534" rotation="-125.864 -0 0" clipDistance="300" nodeId="394" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="126" name="molla9" translation="0.422367 0.116698 1.37498" rotation="144.136 -0 0" clipDistance="300" nodeId="395" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="396 389">
+                    <TransformGroup name="joint17" translation="-0.420207 -0.687027 1.17708" rotation="90 57.5517 90" nodeId="396"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="127" name="bultsBBF05" clipDistance="300" nodeId="397" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="128" name="attachFrame09" clipDistance="300" nodeId="398" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="129" name="RabeBlueBird09" translation="-1.26003 0.73863 0.716221" rotation="180 -0 0" clipDistance="300" nodeId="399" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="130" name="bultsBB09" translation="1.26003 0.73863 0.716221" rotation="-180 -0 0" clipDistance="300" nodeId="400" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint4" translation="0.00443876 -0.111951 0.242855" rotation="-180 -7.49747e-07 -9.57126e-07" nodeId="401"/>
+                  <TransformGroup name="supportSpringRef09" translation="0.000130057 -0.046627 0.272851" rotation="-54.485 -0 0" nodeId="402"/>
+                  <TransformGroup name="frame09Ref" translation="0.000149965 -0.0599591 0.405631" rotation="-16.449 -0 0" nodeId="403"/>
+                </Shape>
+                <Shape shapeId="131" name="frame09" translation="-1.25988 0.918417 0.716448" rotation="163.551 -0 0" clipDistance="300" nodeId="404" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="132" name="supportSpring09" translation="-1.2599 1.17509 0.721589" rotation="125.515 -0 0" clipDistance="300" nodeId="405" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="133" name="bultsBBF09D" translation="1.2599 0.0952815 1.37566" rotation="-125.515 -0 0" clipDistance="300" nodeId="406" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="134" name="molla2" translation="0.42074 0.0952815 1.37566" rotation="144.485 -0 0" clipDistance="300" nodeId="407" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 401">
+                    <TransformGroup name="joint3" translation="-0.43061 -0.69937 1.17841" rotation="90 57.2209 90" nodeId="408"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="135" name="bultsBBF09" clipDistance="300" nodeId="409" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="136" name="attachFrame10" clipDistance="300" nodeId="410" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="137" name="RabeBlueBird10" translation="-0.421521 0.73863 0.716221" rotation="180 -0 0" clipDistance="300" nodeId="411" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="138" name="bultsBB10" translation="0.421521 0.73863 0.716221" rotation="-180 -0 0" clipDistance="300" nodeId="412" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint6" translation="-0.00196201 -0.110828 0.240312" rotation="-180 -7.08963e-07 -9.65708e-07" nodeId="413"/>
+                  <TransformGroup name="supportSpringRef10" translation="0.000133008 -0.0428261 0.277393" rotation="-54.309 -0 0" nodeId="414"/>
+                  <TransformGroup name="frame10Ref" translation="0.000147998 -0.0604126 0.404121" rotation="-16.448 -0 0" nodeId="415"/>
+                </Shape>
+                <Shape shapeId="139" name="frame10" translation="-0.421373 0.918417 0.716448" rotation="163.552 -0 0" clipDistance="300" nodeId="416" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="140" name="supportSpring10" translation="-0.421388 1.17509 0.721589" rotation="125.691 -0 0" clipDistance="300" nodeId="417" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="141" name="bultsBBF10D" translation="0.421388 0.0995072 1.37536" rotation="-125.691 -0 0" clipDistance="300" nodeId="418" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="142" name="molla3" translation="0.421388 0.0995072 1.37536" rotation="144.309 -0 0" clipDistance="300" nodeId="419" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="420 413">
+                    <TransformGroup name="joint5" translation="-0.423483 -0.692149 1.17674" rotation="90 56.5467 90" nodeId="420"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="143" name="bultsBBF10" clipDistance="300" nodeId="421" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="144" name="attachFrame11" clipDistance="300" nodeId="422" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="145" name="RabeBlueBird11" translation="0.421521 0.73863 0.716221" rotation="180 -0 0" clipDistance="300" nodeId="423" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="146" name="bultsBB11" translation="-0.421521 0.73863 0.716221" rotation="-180 -0 0" clipDistance="300" nodeId="424" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint8" translation="0.00674599 -0.107904 0.235929" rotation="180 -7.62429e-07 -9.54354e-07" nodeId="425"/>
+                  <TransformGroup name="supportSpringRef11" translation="-0.000133008 -0.0680453 0.247456" rotation="-54.392 -0 0" nodeId="426"/>
+                  <TransformGroup name="frame11Ref" translation="-0.000147998 -0.0621798 0.397548" rotation="-16.471 -0 0" nodeId="427"/>
+                </Shape>
+                <Shape shapeId="147" name="frame11" translation="0.421373 0.918417 0.716448" rotation="163.529 -0 0" clipDistance="300" nodeId="428" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="148" name="supportSpring11" translation="0.421388 1.17509 0.721589" rotation="125.608 -0 0" clipDistance="300" nodeId="429" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="149" name="bultsBBF11D" translation="-0.421388 0.0975146 1.37551" rotation="-125.608 -0 0" clipDistance="300" nodeId="430" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="150" name="molla4" translation="0.427454 0.0975146 1.37551" rotation="144.392 -0 0" clipDistance="300" nodeId="431" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="432 425">
+                    <TransformGroup name="joint7" translation="-0.420575 -0.692149 1.1782" rotation="90 57.4309 90" nodeId="432"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="151" name="bultsBBF11" clipDistance="300" nodeId="433" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="152" name="attachFrame12" translation="0.0705766 0 0" clipDistance="300" nodeId="434" materialIds="11" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="153" name="RabeBlueBird12" translation="1.26003 0.73863 0.716221" rotation="180 -0 0" clipDistance="300" nodeId="435" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="154" name="bultsBB12" translation="-1.26003 0.73863 0.716221" rotation="-180 -0 0" clipDistance="300" nodeId="436" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <TransformGroup name="joint10" translation="-0.00716007 -0.110828 0.23739" rotation="-180 -7.45348e-07 -9.58075e-07" nodeId="437"/>
+                  <TransformGroup name="supportSpringRef12" translation="-0.000130057 -0.0520295 0.269918" rotation="-54.394 -0 0" nodeId="438"/>
+                  <TransformGroup name="frame12Ref" translation="-0.000149965 -0.0547752 0.418503" rotation="-16.623 -0 0" nodeId="439"/>
+                </Shape>
+                <Shape shapeId="155" name="frame12" translation="1.25988 0.918417 0.716448" rotation="163.377 -0 0" clipDistance="300" nodeId="440" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="156" name="supportSpring12" translation="1.2599 1.17509 0.721589" rotation="125.606 -0 0" clipDistance="300" nodeId="441" materialIds="11" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="157" name="bultsBBF12D" translation="-1.2599 0.0974663 1.37551" rotation="-125.606 -0 0" clipDistance="300" nodeId="442" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="158" name="molla5" translation="0.42137 0.0974663 1.37551" rotation="144.394 -0 0" clipDistance="300" nodeId="443" materialIds="13" castsShadows="true" receiveShadows="true" skinBindNodeIds="444 437">
+                    <TransformGroup name="joint9" translation="-0.4284 -0.689227 1.17528" rotation="90 57.1481 90" nodeId="444"/>
+                  </Shape>
+                </Shape>
+                <Shape shapeId="159" name="bultsBBF12" clipDistance="300" nodeId="445" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="dynamicHoses" nodeId="446">
+              <Shape shapeId="160" name="hoses01" clipDistance="300" nodeId="447" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="161" name="hoses02" clipDistance="300" nodeId="448" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="162" name="hoses03" clipDistance="300" nodeId="449" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="163" name="hoses04" clipDistance="300" nodeId="450" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="164" name="hoses05" clipDistance="300" nodeId="451" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="165" name="hoses06" clipDistance="300" nodeId="452" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="166" name="hoses07" clipDistance="300" nodeId="453" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="167" name="hoses08" clipDistance="300" nodeId="454" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="168" name="Fasciette" clipDistance="300" nodeId="455" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="169" name="dynamicHoses01" rotation="-90 -0 0" clipDistance="300" nodeId="456" materialIds="8" castsShadows="true" receiveShadows="true" skinBindNodeIds="458 360">
+                <Shape shapeId="170" name="dynamicHoses02" clipDistance="300" nodeId="457" materialIds="8" castsShadows="true" receiveShadows="true" skinBindNodeIds="458 360"/>
+                <TransformGroup name="joint1" translation="-0.395552 -1.6358 0.934572" rotation="90 -1.96079e-06 128.472" nodeId="458"/>
+              </Shape>
+              <Shape shapeId="171" name="dynamicHoses03" rotation="-90 -0 0" clipDistance="300" nodeId="459" materialIds="8" castsShadows="true" receiveShadows="true" skinBindNodeIds="461 357">
+                <Shape shapeId="172" name="dynamicHoses04" clipDistance="300" nodeId="460" materialIds="8" castsShadows="true" receiveShadows="true" skinBindNodeIds="461 357"/>
+                <TransformGroup name="joint1" translation="0.39849 -1.63818 0.940768" rotation="90 -1.99397e-06 52.7652" nodeId="461"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="workArea" nodeId="462">
+              <TransformGroup name="workAreaStart" translation="1.5 0 1.48736" nodeId="463"/>
+              <TransformGroup name="workAreaWidth" translation="-1.5 0 1.48736" nodeId="464"/>
+              <TransformGroup name="workAreaHeight" translation="1.5 0 -0.295393" nodeId="465"/>
+              <TransformGroup name="groundReferenceNode" nodeId="466"/>
+              <TransformGroup name="workAreaStartLeft" translation="2.75 0 1.48736" nodeId="467"/>
+              <TransformGroup name="workAreaWidthLeft" translation="1.5 0 1.48736" nodeId="468"/>
+              <TransformGroup name="workAreaHeightLeft" translation="2.75 0 -0.295393" nodeId="469"/>
+              <TransformGroup name="workAreaStartRight" translation="-1.5 0 1.48736" nodeId="470"/>
+              <TransformGroup name="workAreaWidthRight" translation="-2.75 0 1.48736" nodeId="471"/>
+              <TransformGroup name="workAreaHeightRight" translation="-1.5 0 -0.295393" nodeId="472"/>
+            </TransformGroup>
+            <TransformGroup name="ai" nodeId="473">
+              <TransformGroup name="aiMarkerLeft" translation="2.75 0 1.64224" nodeId="474"/>
+              <TransformGroup name="aiMarkerRight" translation="-2.75 0 1.64224" nodeId="475"/>
+              <TransformGroup name="aiMarkerBack" translation="0 0 -1.57237" nodeId="476"/>
+            </TransformGroup>
+            <TransformGroup name="effect" nodeId="477">
+              <Shape shapeId="173" name="soilAnimation" nodeId="478" materialIds="9"/>
+              <Shape shapeId="174" name="soilEmitShapeArm" translation="0.0480019 -0.0503446 0.807826" clipDistance="300" nodeId="479" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="48" name="dustEmitterShapeMid" translation="0.26122 0 0.866526" scale="0.964097 1 0.709174" clipDistance="300" nodeId="480" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="foliage_bendingM" translation="0 0 -1.08775" nodeId="481"/>
+            </TransformGroup>
+            <TransformGroup name="hydraulics" nodeId="482">
+              <TransformGroup name="hydraulicIn01" translation="0.038 1.42503 1.35283" rotation="-132.844 -0 0" nodeId="483"/>
+              <TransformGroup name="hydraulicOut02" translation="0.038 1.43977 1.37008" rotation="-132.524 -0 0" nodeId="484"/>
+            </TransformGroup>
+            <TransformGroup name="connectors" nodeId="485">
+              <TransformGroup name="connector01" translation="0.0662156 1.0737 1.4005" rotation="97.3035 -0 0" scale="0.5 0.5 0.5" nodeId="486"/>
+              <TransformGroup name="connector02" translation="0.0830009 1.08555 1.39928" rotation="97.793 -0 0" scale="0.5 0.5 0.5" nodeId="487"/>
+            </TransformGroup>
+            <Shape shapeId="175" name="warningDecalsMid" clipDistance="300" nodeId="488" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="176" name="warningDecalsRight" translation="-0.000359654 3.57628e-07 0" clipDistance="300" nodeId="489" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="221">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="228">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="233">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="240">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="245">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="252">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="291">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="298">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="303">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="310">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="315">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="322">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="357">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="360">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="365">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="372">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="377">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="384">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="389">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="396">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="401">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="408">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="413">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="420">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="425">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="432">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="437">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="444">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="458">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="461">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="61">
+    <author>MFZ_Modding</author>
+    <version>1.0.0.1</version>
+    <title>
+        <en>Rabe Bluebird 6000_MFZ</en>
+        <de>Rabe Bluebird 6000_MFZ</de>
+    </title>
+    <description>
+        <en><![CDATA[Rabe BlueBird 6000
+- Price: 35.000 €
+- Required Power: 170HP
+- Working Width: 6.0 metres
+- Working Speed: 15 km/h
+- 2 Attach Config (Front & Back)
+- 2 Color Config]]></en>
+        <de><![CDATA[Rabe BlueBird 6000
+- Preis: 35.000 €
+- Benötigte Leistung: 170 PS
+- Arbeitsbreite: 6.0 Meter
+- Arbeitsgeschwindigkeit: 15 km/h
+- 2 Kupplungskonfigurationen (Vorne Hinten)
+- 2 Farboptionen]]></de>
+        <fr><![CDATA[Rabe BlueBird 6000
+- Prix : 35.000 €
+- Puissance requise: 170 ch
+- Largeur de travail : 6,0 mètres
+- Vitesse de travail : 15 km/h
+- 2 attaches de configuration (avant et arrière)
+- Configuration 2 couleurs]]></fr>
+    </description>
+    <iconFilename>icon_bluebird.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="xml/rabebluebird.xml"/>
+    </storeItems>
+    <l10n>
+        <text name="configuration_RulloSi">
+            <en>Cage Roller</en>
+            <de>Käfigrolle</de>
+        </text>
+        <text name="configuration_RulloNo">
+            <en>Without Roller</en>
+            <de>Ohne Rolle</de>
+        </text>
+        <text name="configuration_BACK">
+            <en>Attach Back</en>
+            <de>Hintere Kupplung anbringen</de>
+        </text>
+        <text name="configuration_FRONT">
+            <en>Attach Front</en>
+            <de>Vordere Kupplung anbringen</de>
+        </text>
+    </l10n>
+</modDesc>
